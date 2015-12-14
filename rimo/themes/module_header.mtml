@@ -1,0 +1,13 @@
+<div class="inner group">
+  <h1><a href="<mt:BlogURL>"><img src="<mt:Var name='logoUrl'>" alt="<mt:BlogName escape='html'>"></a></h1>
+  <span id="respomsive-menu-button"></span>
+  <mt:If name="headerClass" eq="top-header">
+    <h2><mt:BlogDescription escae='html'></h2>
+  </mt:If>
+  <nav role="navigation" id="globalnavi">
+    <ul>
+      <mt:TopLevelCategories><li><a href="<mt:CategoryArchiveLink>"><mt:CategoryLabel escape="html"></a></li></mt:TopLevelCategories>
+      <li><a href="<mt:BlogURL>about.html"><__trans phrase='__HEADER_ABOUT'></a></li>
+    </ul>
+  </nav>
+</div>

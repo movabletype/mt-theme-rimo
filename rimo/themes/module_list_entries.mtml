@@ -1,0 +1,26 @@
+<li>
+  <article>
+    <figure class="entry-image">
+      <a href="<mt:EntryPermalink>" class="image"><img src="<mt:Var name='imageUrl'>" alt=""></a>
+      <mt:EntryCategories type="primary"><a href="<mt:CategoryArchiveLink>" class="label category"><mt:CategoryLabel escape="html"></a></mt:EntryCategories>
+    </figure>
+    <div class="entry-detail group">
+      <div class="entry-meta group">
+        <div class="entry-author">
+          <figure>
+            <a href="<mt:EntryLink archive_type='Author'>">
+              <mt:SetVarBlock name="authorPicUrl"><mt:If tag='AuthorUserpicURL' square="1"><mt:AuthorUserpicURL><mt:Else><mt:StaticWebPath>images/default-userpic-90.jpg</mt:If></mt:SetVarBlock>
+              <img src="<mt:Var name='authorPicUrl'>" width="40px" alt="<mt:EntryAuthorDisplayName escape='html'>"></a>
+          </figure>
+          <p><a href="<mt:EntryLink archive_type='Author'>"><mt:EntryAuthorDisplayName escape="html"></a></p>
+        </div>
+        <div class="entry-date">
+          <time datetime="<mt:EntryDate format_name='iso8601'>"><mt:EntryDate format="%x"></time>
+        </div>
+      </div>
+      <div class="entry-title">
+        <a href="<mt:EntryPermalink>"><mt:EntryTitle escape="html"></a>
+      </div>
+    </div>
+  </article>
+</li>

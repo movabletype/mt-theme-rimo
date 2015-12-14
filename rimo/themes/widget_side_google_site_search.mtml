@@ -1,0 +1,12 @@
+<section id="side-search" class="search-form group">
+<form method="get" action="<mt:CGIPath><mt:SearchScript>" id="blog-search" role="search">
+<mt:If name="search_results">
+  <input type="hidden" name="IncludeBlogs" value="<mt:SearchIncludeBlogs>">
+<mt:Else>
+  <input type="hidden" name="IncludeBlogs" value="<mt:BlogID>">
+</mt:If>
+  <input type="hidden" name="limit" value="<mt:Var name='entriesPerPage'>">
+  <input type="text" name="search" id="search" placeholder="<__trans phrase='__SEARCH_TEXT'>" value="<mt:SearchString>" class="search-text">
+  <button type="submit" class="search-button" value="<__trans phrase='__SEARCH_BUTTON'>"><img src="<mt:Var name='themeStaticUrl'>/images/search.svg" alt="Search"></button>
+</form>
+</section>

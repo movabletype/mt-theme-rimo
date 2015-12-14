@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_home</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="sablog_entry" sketch:type="MSArtboardGroup" transform="translate(-583.000000, -2560.000000)">
+            <g id="著者" sketch:type="MSLayerGroup" transform="translate(40.000000, 2530.000000)">
+                <g id="icon_home" transform="translate(543.000000, 30.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-100-Copy" fill="#417505" x="0" y="0" width="30" height="30"></rect>
+                    <path d="M7.41666667,15.2566667 L15.07,7.74333333 L22.5833333,15.2566667 L20.25,15.2566667 L20.25,22.2566667 L16.75,22.2566667 L16.75,17.59 L13.25,17.59 L13.25,22.2566667 L9.75,22.2566667 L9.75,15.2566667 L7.41666667,15.2566667 Z" id="home-icon" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

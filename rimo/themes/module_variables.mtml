@@ -1,0 +1,35 @@
+<mt:Ignore><__trans phrase='__GUIDE_DESCRIPTION'></mt:Ignore>
+<mt:SetVarBlock name="siteKeywords"><__trans phrase='__VAR_KEYWORDS'></mt:SetVarBlock>
+
+<mt:Ignore><__trans phrase='__GUIDE_THEMESTATICURL'></mt:Ignore>
+<mt:SupportDirectoryURL setvar="tmpUrl">
+<mt:SetVarBlock name="themeStaticUrl"><mt:If name="tmpUrl" like="^https?"><mt:SetVar name="tmpUrl"><mt:Else>//<mt:CGIHost><mt:SupportDirectoryURL></mt:If>theme_static/<mt:BlogThemeID></mt:SetVarBlock>
+
+<mt:Ignore><__trans phrase='__GUIDE_FAVICONURL'></mt:Ignore>
+<mt:SetVarBlock name="faviconUrl"><mt:Var name='tmpUrl'>theme_static/<mt:BlogThemeID>/images/favicon.ico</mt:SetVarBlock>
+
+<mt:Ignore><__trans phrase='__GUIDE_LOGOURL'></mt:Ignore>
+<mt:SetVarBlock name="logoUrl"><mt:Var name='tmpUrl'>theme_static/<mt:BlogThemeID>/images/logo.png</mt:SetVarBlock>
+
+<mt:Ignore><__trans phrase='__GUIDE_COLOR'></mt:Ignore>
+<mt:SetVarBlock name="mainColor">#004B9A</mt:SetVarBlock>
+<mt:SetVarBlock name="subColor">#0076BF</mt:SetVarBlock>
+
+<mt:Ignore><__trans phrase='__GUIDE_ENTRIES'></mt:Ignore>
+<mt:SetVarBlock name="entriesPerPage">12</mt:SetVarBlock>
+
+<mt:Ignore><__trans phrase='__GUIDE_SOCIAL_ID'></mt:Ignore>
+<mt:SetVarBlock name="fbAppId">376294232404323</mt:SetVarBlock>
+<mt:SetVarBlock name="twitterVia"></mt:SetVarBlock>
+
+<mt:Ignore><__trans phrase='__GUIDE_SOCIAL_BTN'></mt:Ignore>
+<mt:SetVarBlock name="socialButtonFacebook"><mt:If name="fbAppId">1<mt:Else>0</mt:If></mt:SetVarBlock>
+<mt:SetVarBlock name="socialButtonFacebook"><mt:If name="twitterVia">1<mt:Else>0</mt:If></mt:SetVarBlock>
+<mt:SetVarBlock name="socialButtonTwitter">1</mt:SetVarBlock>
+<mt:SetVarBlock name="socialButtonGoogle">1</mt:SetVarBlock>
+<mt:SetVarBlock name="socialButtonHatena">1</mt:SetVarBlock>
+<mt:SetVarBlock name="socialButtonPocket">1</mt:SetVarBlock>
+<mt:SetVarBlock name="socialButtonLine">1</mt:SetVarBlock>
+
+<mt:Ignore><__trans phrase='__GUIDE_DEBUG'></mt:Ignore>
+<mt:SetVarBlock name="debug">1</mt:SetVarBlock>

@@ -1,0 +1,13 @@
+<section id="side-members" class="memberlist">
+  <nav>
+    <h1><__trans phrase='__TITLE_MEMBERS'></h1>
+    <mt:Authors status="enabled" sort_by="display_name" sort_order="descend">
+      <mt:If name="__first__"><ul class="group"></mt:If>
+      <mt:SetVarBlock name="authorArcUrl"><mt:Archives type="Author"><mt:ArchiveLink type='Author' escape='html'></mt:Archives></mt:SetVarBlock>
+      <mt:SetVarBlock name="authorPicUrl"><mt:If tag='AuthorUserpicURL'><mt:AuthorUserpicURL><mt:Else><mt:StaticWebPath>images/default-userpic-90.jpg</mt:If></mt:SetVarBlock>
+      <mt:SetVarBlock name="authorName"><mt:AuthorDisplayName escape='html'></mt:SetVarBlock>
+      <li><mt:If tag="AuthorEntryCount"><a href="<mt:Var name='authorArcUrl'>"></mt:If><img src="<mt:Var name='authorPicUrl'>" alt="<mt:Var name='authorName'>" width="50px"><mt:If tag="AuthorEntryCount"></a></mt:If></li>
+      <mt:If name="__last__"></ul></mt:If>
+    </mt:Authors>
+  </nav>
+</section>
