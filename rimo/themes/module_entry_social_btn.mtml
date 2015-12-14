@@ -12,15 +12,12 @@
   </mt:If>
 
   <mt:If name="socialButtonTwitter">
+    <mt:SetVarBlock name="tweetText"><mt:if tag="EntryTitle"><mt:EntryTitle><mt:Else><__trans phrase='__VAR_NO_TITLE'></mt:If> - <mt:BlogName></mt:SetVarBlock>
     <li class="entry-social-twitter">
-      <a href="https://twitter.com/share"
-        class="twitter-share-button"
-        data-lang="ja"
-        data-count="vertical">
+      <a href="https://twitter.com/intent/tweet?text=<mt:Var name='tweetText' escape='url'>&url=<mt:EntryPermalink escape='url'>&via=<mt:Var name='twitterVia' escape='url'>">
         <img src="<mt:Var name='themeStaticUrl'>/images/tweet.png"
           alt="<__trans phrase='__SOCIAL_TWITTER'>"
-          style="border: none;" />
-        <__trans phrase='__SOCIAL_TWITTER'>
+          style="border: none;margin-top: 0;margin-right: 0;height: 61px;width: 90px;" />
       </a>
     </li>
   </mt:If>
