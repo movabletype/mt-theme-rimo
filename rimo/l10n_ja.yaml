@@ -98,7 +98,7 @@
 '__VAR_ARCHIVE':          'アーカイブ'
 '__VAR_COPYRIGHT':        '&copy; Sample Company, Ltd.'
 '__VAR_DESCRIPTION':      'サイトのキャッチコピーを記述してください。'
-'__VAR_KEYWORDS':         'サイトのキーワードを記述してください,オウンドメディア,Six Apart,Movable Type'
+'__VAR_KEYWORDS':         'サイトのキーワードを記述してください。キーワード1,キーワード2,キーワード3'
 '__VAR_NEXT':             '次へ'
 '__VAR_NO_TITLE':         'タイトルなし'
 '__VAR_PREV':             '前へ'
