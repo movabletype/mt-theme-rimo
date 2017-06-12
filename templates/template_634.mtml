@@ -1,0 +1,136 @@
+<div class="footer-social-buttons">
+  <ul>
+    <mt:If name="social_button_facebook">
+      <li class="facebook">
+        <div class="fb-like"
+          data-href="<$mt:BlogURL encode_html="1"$>"
+          data-send="false"
+          data-layout="button_count"
+          data-width="130"
+          data-show-faces="false"
+          data-font="lucida grande">
+        </div>
+        <div id="fb-root">
+        </div>
+      </li>
+    </mt:If>
+
+    <mt:If name="social_button_twitter">
+      <li class="twitter">
+        <a href="https://twitter.com/share"
+          class="twitter-share-button"
+          data-url="<$mt:BlogURL encode_html="1"$>"
+          data-text="<$mt:BlogName encode_html="1"$>"
+          <mt:If name='twitter_via' ne=''>data-via="<$mt:Var name='twitter_via'$>"</mt:If>>
+          ツイート
+        </a>
+      </li>
+    </mt:If>
+
+    <mt:If name="social_button_hatena">
+      <li class="hatena">
+        <a href="http://b.hatena.ne.jp/entry/<$mt:BlogURL encode_html="1"$>"
+          class="hatena-bookmark-button"
+          data-hatena-bookmark-title="<$mt:BlogName encode_html="1"$>"
+          data-hatena-bookmark-layout="standard"
+          title="このエントリーをはてなブックマークに追加">
+          <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
+            alt="このエントリーをはてなブックマークに追加"
+            width="20"
+            height="20"
+            style="border: none;">
+        </a>
+      </li>
+    </mt:If>
+
+    <mt:If name="social_button_google">
+      <li class="google">
+        <div class="g-plusone"
+          data-size="medium"
+          data-href="<$mt:BlogURL encode_html="1"$>">
+        </div>
+      </li>
+    </mt:If>
+
+    <mt:If name="social_button_pocket">
+      <li class="pocket">
+        <a href="https://getpocket.com/save"
+          class="pocket-btn"
+          data-lang="en"
+          data-save-url="<$mt:BlogURL encode_html="1"$>"
+          data-pocket-count="horizontal">
+          Pocket
+        </a>
+      </li>
+    </mt:If>
+
+    <mt:If name="social_button_line">
+      <li class="line">
+        <span>
+          <div class="line-it-button" style="display: none;" data-type="share-a" data-lang="ja"></div>
+          <script src="//scdn.line-apps.com/n/line_it/thirdparty/loader.min.js" async="async" defer="defer"></script>
+        </span>
+      </li>
+    </mt:If>
+  </ul>
+</div>
+
+<mt:If name="social_button_facebook">
+  <div id="fb-root"></div>
+  <script type="text/javascript">
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4&appId=<$mt:Var name='fb_app_id'$>";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+</mt:If>
+
+<mt:If name="social_button_twitter">
+  <script type="text/javascript">
+  !function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+      p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id = id;
+      js.src = p + '://platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }
+  }(document, 'script', 'twitter-wjs');
+  </script>
+</mt:If>
+
+<mt:If name="social_button_google">
+  <script type="text/javascript">
+  (function() {
+    var po = document.createElement('script');
+    po.type = 'text/javascript';
+    po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(po, s);
+  })();
+  </script>
+</mt:If>
+
+<mt:If name="social_button_hatena">
+  <script type="text/javascript" src="//b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+</mt:If>
+
+<mt:If name="social_button_pocket">
+  <script type="text/javascript">
+  !function(d, i) {
+    if (!d.getElementById(i)) {
+      var j = d.createElement("script");
+      j.id = i;
+      j.src = "https://widgets.getpocket.com/v1/j/btn.js?v=1";
+      var w = d.getElementById(i);
+      d.body.appendChild(j);
+    }
+  }(document, "pocket-btn-js");
+  </script>
+</mt:If>

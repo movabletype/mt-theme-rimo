@@ -1,0 +1,93 @@
+<$mt:Include module="共通変数" strip_linefeeds="1"$>
+<mt:SetVarBlock name="header_class">header-lower</mt:SetVarBlock>
+<!DOCTYPE html>
+<html lang="ja" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="<$mt:BlogURL encode_html="1"$>styles.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <title><$mt:ArchiveTitle encode_html="1"$> - <$mt:BlogName encode_html="1"$></title>
+  <meta name="generator" content="<$mt:ProductName version="1"$>">
+  <meta name="description" content="<$mt:BlogDescription remove_html="1" encode_html="1"$>">
+  <meta name="keywords" content="<$mt:GetVar name="meta_keywords"$>">
+  <mt:Assets tag="@SITE_FAVICON" limit="1"><link rel="shortcut icon" href="<mt:AssetUrl encode_html="1">"></mt:Assets>
+  <link rel="start" href="<$mt:BlogURL encode_html="1"$>">
+  <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="<$mt:Link template="feed_recent"$>">
+  <$mt:CanonicalLink$>
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="<$mt:BlogLanguage setvar="blog_lang"$><mt:If name="blog_lang" eq="ja">ja_JP<mt:Else><$mt:Var name="blog_lang"$></mt:If>">
+  <meta property="og:title" content="<$mt:ArchiveTitle encode_html="1"$> - <$mt:BlogName encode_html="1"$>">
+  <meta property="og:url" content="<$mt:ArchiveLink encode_html="1"$>">
+  <meta property="og:description" content="<$mt:BlogDescription remove_html="1" encode_html="1"$>">
+  <meta property="og:site_name" content="<$mt:BlogName encode_html="1"$>">
+  <mt:Assets type="image" tag="@OG-IMAGE" limit="1"><meta property="og:image" content="<mt:AssetUrl encode_html="1">"></mt:Assets>
+  <meta property="fb:app_id" content="<$mt:Var name='fb_app_id'$>">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@<$mt:Var name='twitter_via'$>">
+  <meta name="twitter:title" content="<$mt:ArchiveTitle encode_html="1"$> - <$mt:BlogName encode_html="1"$>">
+  <meta name="twitter:description" content="<$mt:BlogDescription remove_html="1" encode_html="1"$>">
+  <mt:Assets type="image" tag="@OG-IMAGE" limit="1"><meta property="twitter:image" content="<mt:AssetUrl encode_html="1">"></mt:Assets>
+  <!-- Microdata -->
+  <meta itemprop="description" content="<$mt:BlogDescription remove_html="1" encode_html="1"$>">
+  <link itemprop="url" href="<$mt:ArchiveLink encode_html="1"$>">
+  <mt:Assets type="image" tag="@OG-IMAGE" limit="1"><link itemprop="image" href="<mt:AssetUrl encode_html="1">"></mt:Assets>
+  <!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  <$mt:Include module="Google アナリティクス"$>
+</head>
+<body>
+  <$mt:Include module="ヘッダー"$>
+  <section id="breadcrumb" class="breadcrumb-navi">
+    <div class="inner">
+      <a href="<$mt:BlogURL$>">TOP</a>&nbsp;&gt;&nbsp;<$mt:ArchiveTitle encode="html"$>
+    </div>
+  </section>
+  <!-- content: start -->
+  <div id="content" class="clearfix">
+    <div id="main-wrapper">
+      <main role="main">
+        <h1 class="page-title">&ldquo;<$mt:ArchiveTitle encode="html"$>&rdquo;の記事一覧</h1>
+
+          <section class="entry-author-detail">
+            <div class="entry-author-detail-header">
+              <p class="title">プロフィール</p>
+            </div>
+
+            <div class="entry-author-detail-body clearfix">
+              <figure>
+                <img src="<mt:If tag='AuthorUserpicURL' square="1"><$mt:AuthorUserpicURL$><mt:Else><$mt:BlogRelativeURL$>images/default-userpic-90.jpg</mt:If>" width="90" height="90">
+              </figure>
+              <div class="entry-author-detail-body-text">
+                <p class="name"><a href="<$mt:ArchiveLink archive_type='Author'$>"><$mt:AuthorDisplayName escape='html'$></a></p>
+                <div class="profile">
+                </div>
+              </div>
+            </div>
+
+            <ul class="entry-author-buttons">
+              <li><a href="<$mt:ArchiveLink archive_type='Author'$>"><img src="<$mt:BlogURL$>images/prof_own.svg" alt="アーカイブ"></a></li></mt:If>
+              <mt:If tag="AuthorURL"><li><a href="<$mt:AuthorURL$>"><img src="<$mt:BlogURL$>images/prof_home.svg" alt="ウェブサイト"></a></li></mt:If>
+            </ul>
+         </section>
+
+        <section id="top-entries" class="entrylist">
+          <ul class="clearfix" id="block-entries">
+            <mt:Entries lastn="9999">
+              <$mt:Include module="記事一覧"$>
+            </mt:Entries>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <aside>
+      <$mt:Include module="サイドバー"$>
+    </aside>
+  </div>
+  <!-- content: end -->
+  <$mt:Include module="フッター"$>
+</body>
+</html>
