@@ -6,7 +6,7 @@ See below: [RIMO](https://theme.movabletype.net/rimo/)
 * Movable Type Pro 6.3.2 or later
 
 ## External Compornents
-* Font Awesome (from [maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css](https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css))
+* Font Awesome (from [maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css](https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css))
 
 ## Installing
 
