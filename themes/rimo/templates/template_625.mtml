@@ -359,12 +359,18 @@ a.label:hover {
   margin-right: 0;
 }
 .entrylist li .entry-image {
+  position: relative;
   margin-bottom: 15px;
-  max-height: 198px;
+  height: 200px;
   overflow: hidden;
 }
 .entrylist li .entry-image .image img {
+  position: absolute;
   width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .entrylist li .entry-detail .entry-meta {
   margin-bottom: 15px;
