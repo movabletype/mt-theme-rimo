@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="29px" height="26px" viewBox="0 0 29 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>quote_end</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="sablog_entry" sketch:type="MSArtboardGroup" transform="translate(-699.000000, -2240.000000)" fill="#C0C0C0">
+            <g id="引用" sketch:type="MSLayerGroup" transform="translate(40.000000, 1767.000000)">
+                <g id="quote_end" transform="translate(659.000000, 473.000000)" sketch:type="MSShapeGroup">
+                    <path d="M28.7569123,0.136 L17.792,0.136 L17.792,10.9912632 L24.1516491,10.9912632 C24.1516491,17.8991579 23.3841053,19.5438947 18.8884912,21.5175789 L21.8490175,25.136 C27.4411228,21.8465263 28.7569123,19.1052982 28.7569123,10.9912632 L28.7569123,0.136 Z" id="Path"></path>
+                    <path d="M10.9809123,0.136 L0.016,0.136 L0.016,10.9912632 L6.37564912,10.9912632 C6.37564912,17.8991579 5.60810526,19.5438947 1.11249123,21.5175789 L4.07301754,25.136 C9.66512281,21.8465263 10.9809123,19.1052982 10.9809123,10.9912632 L10.9809123,0.136 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

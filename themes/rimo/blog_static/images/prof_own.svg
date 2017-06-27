@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_profile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="sablog_entry" sketch:type="MSArtboardGroup" transform="translate(-551.000000, -2560.000000)">
+            <g id="著者" sketch:type="MSLayerGroup" transform="translate(40.000000, 2530.000000)">
+                <g id="icon_profile" transform="translate(511.000000, 30.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-100-Copy-2" fill="#A4CE76" x="0" y="0" width="30" height="30"></rect>
+                    <path d="M8,22 L8,20.3316667 L12.6666667,17.3333333 L12.6666667,16.1666667 C12.3788874,16.1666667 12.1125012,15.8769473 11.8675,15.2975 C11.6224988,14.7180527 11.5,14.230002 11.5,13.8333333 L11.5,11.5 C11.5,10.5355507 11.8422188,9.71111453 12.5266667,9.02666667 C13.2111145,8.3422188 14.0355507,8 15,8 C15.9644493,8 16.7888855,8.3422188 17.4733333,9.02666667 C18.1577812,9.71111453 18.5,10.5355507 18.5,11.5 L18.5,13.8333333 C18.5,14.230002 18.3775012,14.7180527 18.1325,15.2975 C17.8874988,15.8769473 17.6211126,16.1666667 17.3333333,16.1666667 L17.3333333,17.3333333 L22,20.3316667 L22,22 L8,22 Z" id="user-icon" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
