@@ -130,6 +130,18 @@ elements:
           search_results:
             label: 検索結果
     importer: template_set
+  default_pages:
+    importer: default_pages
+    name: Default Pages
+    component: core
+    data:
+      about:
+        basename: about
+        title: このサイトについて
+        text: このサイトは Movable Type デザインテーマ「RIMO」で作成されています。
+        excerpt: ウェブページ「このサイトについて」の概要が表示されます。
+        tags: about
+        folder:
 id: rimo
 label: RIMOのテーマ
 name: RIMOのテーマ

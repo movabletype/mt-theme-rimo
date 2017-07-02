@@ -59,7 +59,7 @@
 
             <div class="entry-author-detail-body clearfix">
               <figure>
-                <img src="<mt:If tag='AuthorUserpicURL' square="1"><$mt:AuthorUserpicURL$><mt:Else><$mt:BlogRelativeURL$>images/default-userpic-90.jpg</mt:If>" width="90" height="90">
+                <img src="<mt:If tag='AuthorUserpicURL' square="1"><$mt:AuthorUserpicURL$><mt:Else><$mt:BlogRelativeURL$>images/default-userpic-90.jpg</mt:If>" width="90" height="90" title="<$mt:AuthorDisplayName$>">
               </figure>
               <div class="entry-author-detail-body-text">
                 <p class="name"><a href="<$mt:ArchiveLink archive_type='Author'$>"><$mt:AuthorDisplayName escape='html'$></a></p>
@@ -69,8 +69,8 @@
             </div>
 
             <ul class="entry-author-buttons">
-              <li><a href="<$mt:ArchiveLink archive_type='Author'$>"><img src="<$mt:BlogURL$>images/prof_own.svg" alt="アーカイブ"></a></li></mt:If>
-              <mt:If tag="AuthorURL"><li><a href="<$mt:AuthorURL$>"><img src="<$mt:BlogURL$>images/prof_home.svg" alt="ウェブサイト"></a></li></mt:If>
+              <li><a href="<$mt:ArchiveLink archive_type='Author'$>"><img src="<$mt:BlogURL$>images/prof_own.png" alt="アーカイブ"></a></li></mt:If>
+              <mt:If tag="AuthorURL"><li><a href="<$mt:AuthorURL$>"><img src="<$mt:BlogURL$>images/prof_home.png" alt="ウェブサイト"></a></li></mt:If>
             </ul>
          </section>
 

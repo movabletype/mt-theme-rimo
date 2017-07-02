@@ -26,7 +26,7 @@
     <h1>メンバー</h1>
     <mt:Authors status="enabled" sort_by="display_name" sort_order="descend">
       <mt:If name="__first__"><ul class="clearfix"></mt:If>
-      <li><mt:If tag="AuthorEntryCount"><a href="<$mt:BlogURL encode_html="1"$>author/<$mt:AuthorbaseName$>"></mt:If><img src="<mt:If tag='AuthorUserpicURL'><$mt:AuthorUserpicURL$><mt:Else><$mt:BlogURL$>images/default-userpic-90.jpg</mt:If>" alt="<$mt:AuthorDisplayName escape='html'$>" width="50px"><mt:If tag="AuthorEntryCount"></a></mt:If></li>
+        <li><mt:If tag="AuthorEntryCount"><a href="<$mt:BlogURL encode_html="1"$>author/<$mt:AuthorbaseName$>" title="<$mt:AuthorDisplayName$>"></mt:If><img src="<mt:If tag='AuthorUserpicURL'><$mt:AuthorUserpicURL$><mt:Else><$mt:BlogURL$>images/default-userpic-90.jpg</mt:If>" alt="<$mt:AuthorDisplayName escape='html'$>" width="50px"><mt:If tag="AuthorEntryCount"></a></mt:If></li>
       <mt:If name="__last__"></ul></mt:If>
     </mt:Authors>
   </nav>
