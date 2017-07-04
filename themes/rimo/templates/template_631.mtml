@@ -8,8 +8,8 @@
       <div class="entry-meta clearfix">
         <div class="entry-author">
           <figure>
-            <a href="<$mt:ArchiveLink archive_type='Author'$>" title="<$mt:EntryAuthorDisplayName escape="html"$>" >
-              <mt:If tag='AuthorUserpicURL' square="1"><img src="<$mt:AuthorUserpicURL$>" width="40px" alt="<$mt:EntryAuthorDisplayName escape="html"$>"></mt:If>
+            <a href="<$mt:ArchiveLink archive_type='Author'$>">
+              <mt:If tag='AuthorUserpicURL' square="1"><img src="<$mt:AuthorUserpicURL$>" width="40px" alt="<$mt:EntryAuthorDisplayName escape="html"$>" title="<$mt:EntryAuthorDisplayName escape="html"$>"><mt:Else><img src="<mt:BlogUrl>images/default-userpic-90.jpg" width="40px" alt="<$mt:EntryAuthorDisplayName escape="html"$>" title="<$mt:EntryAuthorDisplayName escape="html"$>"></mt:If>
             </a>
           </figure>
           <p><a href="<$mt:ArchiveLink archive_type='Author'$>"><$mt:EntryAuthorDisplayName escape="html"$></a></p>
