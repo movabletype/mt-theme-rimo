@@ -2,7 +2,7 @@
 author_link: 'http://www.movabletype.org/'
 author_name: 'Six Apart, Ltd.'
 class: 'blog'
-description: "RIMO テーマは、簡単にメディアサイトを作れるテーマです。"
+description: "Rimo は、実際のオウンドメディア運用のノウハウを活かして作られた、企業のオウンドメディアサイト構築に最適なテーマです。SNSボタンの配置や、関連記事への導線などにも配慮されているため、簡単なカスタマイズでスピーディーに運用を開始できます。"
 protected: 1
 thumbnail_file: 'thumb.png'
 thumbnail_file_medium: 'thumb-medium.png'
@@ -148,6 +148,6 @@ elements:
         tags: about
         folder:
 id: rimo
-label: RIMO
-name: RIMO
+label: Rimo
+name: Rimo
 version: '1.0'
