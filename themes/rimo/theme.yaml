@@ -1,7 +1,12 @@
 ---
-author_link: ''
-class: website
-description: ''
+author_link: 'http://www.movabletype.org/'
+author_name: 'Six Apart, Ltd.'
+class: 'blog'
+description: "RIMO テーマは、簡単にメディアサイトを作れるテーマです。"
+protected: 1
+thumbnail_file: 'thumb.png'
+thumbnail_file_medium: 'thumb-medium.png'
+thumbnail_file_small: 'thumb-small.png'
 elements:
   blog_static_files:
     component: ~
@@ -143,6 +148,6 @@ elements:
         tags: about
         folder:
 id: rimo
-label: RIMOのテーマ
-name: RIMOのテーマ
+label: RIMO
+name: RIMO
 version: '1.0'
