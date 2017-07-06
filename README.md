@@ -1,6 +1,6 @@
-# RIMO
+# Rimo
 The ported theme from MovableType.net.  
-See below: [RIMO](https://theme.movabletype.net/rimo/)
+See below: [Rimo](https://theme.movabletype.net/rimo/)
 
 ## Requirements
 * Movable Type Pro 6.3.2 or later
@@ -12,7 +12,7 @@ See below: [RIMO](https://theme.movabletype.net/rimo/)
 
 1. Unpack the mt-theme-SimpleCorporate archive.
 1. Upload and copy the mt-theme-rimo/themes/rimo folder to your MT's themes folder. ( /path/to/mt/themes )
-1. Create a site with RIMO theme.
+1. Create a site with Rimo theme.
 
 ## License
 
