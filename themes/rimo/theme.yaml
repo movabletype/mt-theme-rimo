@@ -145,7 +145,7 @@ elements:
         title: このサイトについて
         text: このサイトは Movable Type デザインテーマ「RIMO」で作成されています。
         excerpt: ウェブページ「このサイトについて」の概要が表示されます。
-        tags: about
+        tags: @about
         folder:
 id: rimo
 label: Rimo
