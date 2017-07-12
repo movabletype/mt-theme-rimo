@@ -144,8 +144,8 @@ elements:
     data:
       about:
         basename: about
-        title: About this site
-        text: "This site is created with Movable Type Theme 'Rimo'."
+        title: <__trans phrase="About this site">
+        text: <__trans phrase="This site is created with Movable Type Theme 'Rimo'.">
         excerpt: 
         tags: "@about"
         folder:
