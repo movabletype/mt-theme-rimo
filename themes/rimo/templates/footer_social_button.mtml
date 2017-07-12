@@ -22,7 +22,7 @@
           data-url="<$mt:BlogURL encode_html="1"$>"
           data-text="<$mt:BlogName encode_html="1"$>"
           <mt:If name='twitter_via' ne=''>data-via="<$mt:Var name='twitter_via'$>"</mt:If>>
-          ツイート
+          <__trans phrase="Tweet">
         </a>
       </li>
     </mt:If>
@@ -33,9 +33,9 @@
           class="hatena-bookmark-button"
           data-hatena-bookmark-title="<$mt:BlogName encode_html="1"$>"
           data-hatena-bookmark-layout="standard"
-          title="このエントリーをはてなブックマークに追加">
+          title="<__trans phrase="Add this article to Hatena Bookmark.">">
           <img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png"
-            alt="このエントリーをはてなブックマークに追加"
+            alt="<__trans phrase="Add this article to Hatena Bookmark.">"
             width="20"
             height="20"
             style="border: none;">

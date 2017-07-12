@@ -1,4 +1,4 @@
-<$mt:Include module="共通変数" strip_linefeeds="1"$>
+<$mt:Include module="<__trans phrase="Common Variables">" strip_linefeeds="1"$>
 <mt:SetVarBlock name="header_class">header-lower</mt:SetVarBlock>
 <!DOCTYPE html>
 <html lang="ja" itemscope itemtype="http://schema.org/WebPage">
@@ -37,10 +37,10 @@
   <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
   <![endif]-->
-  <$mt:Include module="Google アナリティクス"$>
+  <$mt:Include module="<__trans phrase="Google Analytics">"$>
 </head>
 <body>
-  <$mt:Include module="ヘッダー"$>
+  <$mt:Include module="<__trans phrase="Header">"$>
   <section id="breadcrumb" class="breadcrumb-navi">
     <div class="inner">
       <a href="<$mt:BlogURL$>">TOP</a>&nbsp;&gt;&nbsp;<$mt:ArchiveTitle encode="html"$>
@@ -50,11 +50,11 @@
   <div id="content" class="clearfix">
     <div id="main-wrapper">
       <main role="main">
-        <h1 class="page-title">&ldquo;<$mt:ArchiveTitle encode="html"$>&rdquo;の記事一覧</h1>
+        <h1 class="page-title"><__trans phrase="Entries written by &ldquo;[_1]&rdquo;" params="<$mt:ArchiveTitle encode="html"$>"></h1>
 
           <section class="entry-author-detail">
             <div class="entry-author-detail-header">
-              <p class="title">プロフィール</p>
+              <p class="title"><__trans phrase="Profile"></p>
             </div>
 
             <div class="entry-author-detail-body clearfix">
@@ -69,25 +69,25 @@
             </div>
 
             <ul class="entry-author-buttons">
-              <li><a href="<$mt:ArchiveLink archive_type='Author'$>"><img src="<$mt:BlogURL$>images/prof_own.png" alt="アーカイブ" title="<mt:AuthorDisplayName escape="html">の記事一覧"></a></li></mt:If>
-              <mt:If tag="AuthorURL"><li><a href="<$mt:AuthorURL$>"><img src="<$mt:BlogURL$>images/prof_home.png" alt="ウェブサイト" title="<mt:AuthorDisplayName escape="html">のウェブサイト"></a></li></mt:If>
+              <li><a href="<$mt:ArchiveLink archive_type='Author'$>"><img src="<$mt:BlogURL$>images/prof_own.png" alt="<__trans phrase="Archives">" title="<__trans phrase="Entries written by [_1]" params="<mt:AuthorDisplayName escape="html">">"></a></li></mt:If>
+              <mt:If tag="AuthorURL"><li><a href="<$mt:AuthorURL$>"><img src="<$mt:BlogURL$>images/prof_home.png" alt="Website" title="<__trans phrase="__LINK_TO_WEBSITE [_1]" params="<mt:AuthorDisplayName escape="html">">"></a></li></mt:If>
             </ul>
          </section>
 
         <section id="top-entries" class="entrylist">
           <ul class="clearfix" id="block-entries">
             <mt:Entries lastn="9999">
-              <$mt:Include module="記事一覧"$>
+              <$mt:Include module="<__trans phrase="Entry Listing">"$>
             </mt:Entries>
           </ul>
         </section>
       </main>
     </div>
     <aside>
-      <$mt:Include module="サイドバー"$>
+      <$mt:Include module="<__trans phrase="Sidebar">"$>
     </aside>
   </div>
   <!-- content: end -->
-  <$mt:Include module="フッター"$>
+  <$mt:Include module="<__trans phrase="Footer">"$>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<$mt:Include module="共通変数" strip_linefeeds="1"$>
+<$mt:Include module="<__trans phrase="Common Variables">" strip_linefeeds="1"$>
 <mt:SetVarBlock name="header_class">top-header</mt:SetVarBlock>
 <mt:setvar name="infiniteloading" value="1">
 <!DOCTYPE html>
@@ -38,10 +38,10 @@
   <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
   <![endif]-->
-  <$mt:Include module="Google アナリティクス"$>
+  <$mt:Include module="<__trans phrase="Google Analytics">"$>
   </head>
 <body>
-  <$mt:Include module="ヘッダー"$>
+  <$mt:Include module="<__trans phrase="Header">"$>
   <!-- content: start -->
   <div id="content" class="clearfix">
     <div id="main-wrapper">
@@ -49,7 +49,7 @@
         <section id="top-entries" class="entrylist">
           <ul class="clearfix" id="block-entries">
             <mt:Entries limit="$entries_per_page">
-              <$mt:Include module="記事一覧"$>
+              <$mt:Include module="<__trans phrase="Entry Listing">"$>
             </mt:Entries>
           </ul>
         </section>
@@ -57,10 +57,10 @@
     </div>
 
     <aside>
-      <$mt:Include module="サイドバー"$>
+      <$mt:Include module="<__trans phrase="Sidebar">"$>
     </aside>
   </div>
   <!-- content: end -->
-  <$mt:Include module="フッター"$>
+  <$mt:Include module="<__trans phrase="Footer">"$>
 </body>
 </html>

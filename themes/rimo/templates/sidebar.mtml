@@ -25,10 +25,10 @@
 
 <section id="side-members" class="memberlist">
   <nav>
-    <h1>メンバー</h1>
+    <h1><__trans phrase="Members"></h1>
     <mt:Authors status="enabled" sort_by="display_name" sort_order="descend">
       <mt:If name="__first__"><ul class="clearfix"></mt:If>
-        <li><mt:If tag="AuthorEntryCount"><a href="<$mt:BlogURL encode_html="1"$>author/<$mt:AuthorbaseName$>"></mt:If><img src="<mt:If tag='AuthorUserpicURL'><$mt:AuthorUserpicURL$><mt:Else><$mt:BlogURL$>images/default-userpic-90.jpg</mt:If>" alt="<$mt:AuthorDisplayName escape='html'$>" width="50px" title="<$mt:AuthorDisplayName$>"><mt:If tag="AuthorEntryCount"></a></mt:If></li>
+        <li><mt:If tag="AuthorEntryCount"><a href="<$mt:ArchiveLink archive_type='Author'$>"></mt:If><img src="<mt:If tag='AuthorUserpicURL'><$mt:AuthorUserpicURL$><mt:Else><$mt:BlogURL$>images/default-userpic-90.jpg</mt:If>" alt="<$mt:AuthorDisplayName escape='html'$>" width="50px" title="<$mt:AuthorDisplayName$>"><mt:If tag="AuthorEntryCount"></a></mt:If></li>
       <mt:If name="__last__"></ul></mt:If>
     </mt:Authors>
   </nav>
@@ -38,7 +38,7 @@
 <mt:EntriesHeader>
 <section id="side-recentpost" class="side-entrylist">
   <nav>
-    <h1>編集部イチオシ記事</h1>
+    <h1><__trans phrase="Recommended"></h1>
     <ul>
 </mt:EntriesHeader>
       <li>
@@ -58,7 +58,7 @@
 
 <section id="side-recentpost" class="categorylist"><section id="side-categories" class="categorylist">
   <nav>
-  <h1>カテゴリ</h1>
+  <h1><__trans phrase="Categories"></h1>
   <ul>
       <mt:TopLevelCategories>
       <mt:If tag="CategoryCount">
@@ -87,7 +87,7 @@
   <mt:ArchiveListHeader>
   <section id="side-categories" class="categorylist">
   <nav>
-    <h1>月別アーカイブ</h1>
+    <h1><__trans phrase="Monthly Archives"></h1>
     <ul>
   </mt:ArchiveListHeader>
       <li><a href="<$mt:ArchiveLink$>"><$mt:ArchiveTitle escape="html"$></a><small><$mt:ArchiveCount$></small></li>
@@ -99,5 +99,5 @@
 </mt:ArchiveList>
 
 <section id="side-likebox">
-  <!-- Facebook の Page Plugin のコードを記述してください。  -->
+  <!-- <__trans phrase="Please put the code of Page Plugin of Facebook here.">  -->
 </section>
