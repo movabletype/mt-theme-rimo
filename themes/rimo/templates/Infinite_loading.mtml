@@ -40,12 +40,10 @@ $(function(){
       if (max >= ((page * LIMIT) - LIMIT) && fire == true
         || max == 0 && page == 1 && fire == false){
         fire = false;
-        console.log('loading...');
         getDataAPI();
         page++;
       }
       else if (max < ((page * LIMIT) - LIMIT) && max > 0) {
-        console.log('end');
         $(LOADING_DIV).remove();
       }
     }
@@ -60,7 +58,7 @@ $(function(){
         appendHTML(res);
         $(LOADING_DIV).fadeOut();
       },
-      error:function(){console.log('Error...');},
+      error:function(){},
       complete:function(){fire = true;}
     });
   }
@@ -82,12 +80,10 @@ $(function(){
     else {
       uri = MT_PATH + "mt-data-api.cgi/v3/sites/<mt:BlogId>/entries?limit=" + LIMIT + '&offset=' + page * LIMIT;
     }
-    console.log(uri);
     return uri;
   }
 
   function indexStyle(res) {
-    console.log(res);
 
     var category  = res.categories.shift();
     var date      = dateFromStr(res.createdDate);
@@ -100,7 +96,9 @@ $(function(){
     html += "  <article>";
     html += "    <figure class=\"entry-image\">";
     html += "      <a href=\"" + entryUrl + "\" class=\"image\"><img src=\"" + imageUrl + "\" alt=\"\" width=\"448\"></a>";
-    html += "      <a href=\"#\" class=\"label category\">" + category.label + "</a>";
+    if ( category ) {
+      html += "      <a href=\"#\" class=\"label category\">" + category.label + "</a>";
+    }
     html += "    </figure>";
     html += "    <div class=\"entry-detail clearfix\">";
     html += "      <div class=\"entry-meta clearfix\">";
@@ -138,22 +136,33 @@ $(function(){
   }
 
   function imageURLFromStr(obj){
-    var assetImage = obj.assets[0].url;
-    var cfImage    = obj.customFields[0].value.match(/http[s]?\:\/\/[\w\+\$\;\?\.\%\,\!\#\~\*\/\:\@\&\\\=\_\-]+/g);
 
-    if ( cfImage ) {
-      return cfImage;
-    } else {
-      if ( assetImage ) {
-        return assetImage;
-      } else {
-        return "<$mt:BlogURL encode_html="1"$>images/noimage_448.png";
+    // Read from CustomFields
+    if ( obj.customFields.length > 0 ) {
+      var cfImage;
+      for ( var cf of obj.customFields ) {
+        if ( cf.basename === "blog_entry_ogp_image" && cf.value ) {
+          cfImage = obj.customFields[0].value.match(/http[s]?\:\/\/[\w\+\$\;\?\.\%\,\!\#\~\*\/\:\@\&\\\=\_\-]+/g);
+          if ( cfImage ) {
+            break;
+          }
+        }
+      }
+      if ( cfImage ) {
+        return cfImage;
       }
     }
+
+    // Next, read from entry assets
+    if ( obj.assets.length > 0 ) {
+      return obj.assets[0].url;
+    }
+
+    // otherwise, return default.
+    return "<$mt:BlogURL encode_html="1"$>images/noimage-448.png";
   }
 
   function getCaregoryArchive(cat){
-    console.log(cat);
     return cat;
   }
 });
